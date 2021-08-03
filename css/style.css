@@ -1,6 +1,6 @@
 :root {
   --color-primary: #2584ff;
-  --color-secondry: #00d9ff;
+  --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-/* Typograph */
+/* Typography */
 ::selection {
   background: var(--color-primary);
   color: #fff;
@@ -55,7 +55,7 @@ h3 {
 }
 
 p {
-  margin: 0;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -90,7 +90,7 @@ a {
 
 .link-arrow::after {
   content: "-->";
-  margin: 5px;
+  margin-left: 5px;
   transition: margin 0.15s;
 }
 
@@ -103,8 +103,8 @@ a {
     font-size: 1.5rem;
   }
 }
-
 /* Badges */
+
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -118,8 +118,8 @@ a {
   color: #fff;
 }
 
-.badge--secondry {
-  background: var(--color-secondry);
+.badge--secondary {
+  background: var(--color-secondary);
   color: #fff;
 }
 
@@ -137,7 +137,6 @@ a {
     font-size: 1.2rem;
   }
 }
-
 /* Lists */
 .list {
   list-style: none;
@@ -146,12 +145,12 @@ a {
 
 .list--inline .list__item {
   display: inline-block;
-  margin: 2rem;
+  margin-right: 2rem;
 }
 
 .list--tick {
   list-style-image: url(../images/tick.svg);
-  padding: 3rem;
+  padding-left: 3rem;
   color: var(--color-headings);
 }
 
@@ -165,7 +164,6 @@ a {
     padding-left: 0;
   }
 }
-
 /* Icons */
 .icon {
   width: 40px;
@@ -230,13 +228,13 @@ a {
   background: #3a8ffd;
 }
 
-.btn--secondry {
-  background: var(--color-secondry);
+.btn--secondary {
+  background: var(--color-secondary);
   color: #fff;
 }
 
-.btn--secondry:hover {
-  background: #00c8eb;
+.btn--secondary:hover {
+  background: #05cdf0;
 }
 
 .btn--accent {
@@ -310,7 +308,6 @@ a {
     font-size: 1.5rem;
   }
 }
-
 /* Cards */
 .card {
   border-radius: 7px;
@@ -328,8 +325,8 @@ a {
   color: #fff;
 }
 
-.card--secondry .card__header {
-  background: var(--color-secondry);
+.card--secondary .card__header {
+  background: var(--color-secondary);
   color: #fff;
 }
 
@@ -337,7 +334,7 @@ a {
   background: #126de4;
 }
 
-.card--secondry .badge--secondry {
+.card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
@@ -414,7 +411,7 @@ a {
   }
 
   .plan__description {
-    font-size: 0.7rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -428,14 +425,13 @@ a {
   margin-top: 0;
 }
 
-media__body {
+.media__body {
   margin: 0 2rem;
 }
 
 .media__image {
   margin-top: 1rem;
 }
-
 /* Quotes */
 .quote {
   font-size: 3rem;
@@ -472,7 +468,7 @@ media__body {
 }
 
 @media screen and (min-width: 1024px) {
-  .qoute {
+  .quote {
     font-size: 2rem;
   }
 
@@ -509,6 +505,7 @@ media__body {
 
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -578,8 +575,7 @@ media__body {
   }
 }
 
-/* 
-collapsible */
+/* Collapsibles */
 .collapsible__header {
   display: flex;
   justify-content: space-between;
@@ -610,15 +606,15 @@ collapsible */
   max-height: 100vh;
   opacity: 1;
 }
-
 /* Blocks */
 .block {
-  --padding-vartical: 6rem;
-  padding: var(--padding-vartical) 2rem;
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
 }
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -631,18 +627,18 @@ collapsible */
 }
 
 .block--dark h1,
-h2,
-h3 {
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
 
 .block--skewed-right {
-  padding-bottom: cals(var(--padding-vartical) + 4rem);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
-  padding-bottom: cals(var(--padding-vartical) + 4rem);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
@@ -715,6 +711,7 @@ h3 {
 }
 
 /* Hero */
+
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -738,7 +735,7 @@ h3 {
 }
 
 /* Domain Block */
-.block--domain .input-group {
+.block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
   margin: 4rem auto;
@@ -761,7 +758,6 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
-
 /* Plans Block */
 .block-plans .grid {
   gap: 8rem 4rem;
