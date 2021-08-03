@@ -811,7 +811,6 @@ a {
     max-width: 700px;
   }
 }
-
 /* Footer */
 .footer {
   background: #232323;
@@ -846,7 +845,8 @@ a {
 }
 
 .footer__brand img {
-  /* TODO: Considerrefactoring this and applying it to all images. */
+  /* TODO: Consider refactoring this and applying it to 
+  all images. */
   width: 100%;
   max-width: 230px;
 }
@@ -858,6 +858,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+  }
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
