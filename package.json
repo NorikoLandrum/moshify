@@ -4,7 +4,8 @@
   "discription": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,5 @@
   "bugs": {
     "url": "https://github.com/NorikoLandrum/moshify/issues"
   },
-  "homepage": "https://github.com/NorikoLandrum/moshify#readme",
-  "description": ""
+  "homepage": "https://github.com/NorikoLandrum/moshify#readme"
 }
